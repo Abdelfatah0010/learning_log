@@ -132,22 +132,9 @@ LOGIN_REDIRECT_URL ='learning_logs:index'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
 LOGIN_URL = 'accounts:login'
 
-# Platform.sh settings.
+
 # Railway settings
-import os
 ALLOWED_HOSTS = ['learninglog-production-965b.up.railway.app', '.railway.app', 'localhost', '127.0.0.1']
-if 'RAILWAY_STATIC_URL' in os.environ:
-    ALLOWED_HOSTS.append('.railway.app')
-    # Database configuration for Railway
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ['PGDATABASE'],
-            'USER': os.environ['PGUSER'],
-            'PASSWORD': os.environ['PGPASSWORD'],
-            'HOST': os.environ['PGHOST'],
-            'PORT': os.environ['PGPORT'],
-        }
-    }
+
 DEBUG = False
 DISABLE_COLLECTSTATIC = 1
