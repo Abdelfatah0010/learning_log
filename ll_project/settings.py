@@ -135,6 +135,7 @@ LOGIN_URL = 'accounts:login'
 # Platform.sh settings.
 # Railway settings
 import os
+ALLOWED_HOSTS = ['learninglog-production-965b.up.railway.app', '.railway.app', 'localhost', '127.0.0.1']
 if 'RAILWAY_STATIC_URL' in os.environ:
     ALLOWED_HOSTS.append('.railway.app')
     # Database configuration for Railway
