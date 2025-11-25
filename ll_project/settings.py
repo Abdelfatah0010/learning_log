@@ -148,3 +148,5 @@ if 'RAILWAY_STATIC_URL' in os.environ:
             'PORT': os.environ['PGPORT'],
         }
     }
+DEBUG = False
+DISABLE_COLLECTSTATIC = 1
