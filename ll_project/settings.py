@@ -136,5 +136,5 @@ LOGIN_URL = 'accounts:login'
 # Railway settings
 ALLOWED_HOSTS = ['learninglog-production-965b.up.railway.app', '.railway.app', 'localhost', '127.0.0.1']
 
-DEBUG = False
+DEBUG = True
 DISABLE_COLLECTSTATIC = 1
