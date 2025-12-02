@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn ll_project.wsgi
+web: python manage.py migrate --noinput && gunicorn ll_project.wsgi:application --bind 0.0.0.0:$PORT
