@@ -134,6 +134,7 @@ LOGIN_URL = 'accounts:login'
 
 
 # Railway settings
+CSRF_TRUSTED_ORIGINS = ['https://learninglog-production-965b.up.railway.app']
 ALLOWED_HOSTS = ['learninglog-production-965b.up.railway.app', '.railway.app', 'localhost', '127.0.0.1']
 import os
 DATABASES = {
